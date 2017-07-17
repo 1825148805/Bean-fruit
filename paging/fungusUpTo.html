@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/recipe.css">
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>    
+    <title></title>
+    <style>
+        .baike{
+            padding: 15px 14px;
+            width:100%;
+            box-sizing: border-box;
+        }
+        .baike a{
+            display: block;
+            width:100%;
+        }
+        .zuicxg{
+            width: 30%;
+            height: 65px;
+            background-image: url(../images/1446026042.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+            position: relative;
+            padding-bottom: 4px;
+            float: left;
+        }
+        .zuicsc{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: url(../images/sc.png) no-repeat;
+            display: inline-block;
+            background-size: 30px 30px;
+            top: 0px;
+            left: 0px;
+        }
+        .intro{
+            float: left;
+            color:#666;
+            background: #fff;
+            width: 70%;
+            line-height: 22px;
+            text-indent: 12px;
+            /*box-sizing: border-box;*/
+            padding:10px 0 10px;
+            position: relative;
+        }
+        .intro p{
+            padding-top:5px;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }
+        .intro i{
+            display: inline-block;
+            width:20px;
+            height:25px;
+            background: url(../images/btn.png) no-repeat -29px -100px;
+            background-size: 100px 500px;
+            position:absolute;
+            right:5px;
+            top:20px;
+        }
+    </style>
+</head>
+<body>
+ <div id="topwx" style="width: 100%;border-bottom: 1px solid #f3f2f0;z-index: 9999;background:#fff;position: fixed;top: 0;left: 0;display: none">    
+    <i class='btnoff' style='left:90%;' onclick='twxoff()'></i>
+    <a href="#" style="position: absolute;top: 0;left: 0;right: 11rem;bottom: 0;"></a>
+    <img src='../images/1497866248.jpg' style="width:100%;display: block"/>
+</div>
+<div class="tbox" style="display: none"></div>
+
+    <div class="hdsearch">
+        <a href="javascript:history.back(-1)" class="leback"><i class="ic_back"></i></a>
+        <div class="search">
+            <input type="search" value="木耳"/>
+        </div>
+        <span class="menu-off" style="top:14px;"></span>             
+    </div>
+     <ul  class="mine-box">
+        <li><a href="" class="nindex">首页</a></li>
+        <li><a href="" class="nmall">购好货</a></li>
+        <li><a href="" class="ncart">购物车</a></li>
+        <li><a href="" class="nhome">个人中心</a></li>
+    </ul>
+    <div class="seresult clearfix">
+        <div class="tabxzo">
+            <ul id="ordertab">
+                <li><a href="fungus.html">综合最佳</a></li>
+                <li><a href='fungusCollection.html'>收藏最多</a></li>
+                <li><a href='#' class='selet'>做过最多</a></li>
+            </ul>
+        </div>
+        <div class="baike">
+            <a style='overflow: hidden;' class="clearfix" href="#">
+                <div class="zuicxg">
+                    <i class="zuicsc"></i>
+                </div>
+                <div class="intro">
+                    <h3 class="plain">木耳</h3>
+                    <p>食材的营养功效，饮食搭配</p>
+                    <i></i>
+                </div>
+            </a>
+        </div>
+            <div class="cplist">
+                <ul class='container'>
+                    <li class='item'>
+                        <div class="afbox">
+                            <div class="zuic" style="background-image: url(../images/X1.jpg);">
+                            </div>
+                            <div class="zhtw">                           
+                                <h3 class="plain">辣椒木耳土豆片</h3>
+                                <p class="ing">by 诺00000003</p>
+                                <p class="stat">
+                                    <span class="score"> 2046</span>人收藏  <span class="pl20"> 216</span>人做过</p>
+                            </div>
+                        </div>
+                        <a href="" class="aflink"></a>
+                    </li>
+                    <li class='item'>
+                        <div class="afbox">
+                            <div class="zuic" style="background-image: url(../images/X2.jpg);">
+                            </div>
+                            <div class="zhtw">                           
+                                <h3 class="plain">白菜炒木耳</h3>
+                                <p class="ing">by 小熊2</p>
+                                <p class="stat">
+                                    <span class="score"> 1614</span>人收藏  <span class="pl20"> 154</span>人做过</p>
+                            </div>
+                        </div>
+                        <a href="/" class="aflink"></a>
+                    </li>
+                    <li class='item'>
+                        <div class="afbox">
+                            <div class="zuic" style="background-image: url(../images/S2.jpg);">
+                            </div>
+                            <div class="zhtw">                           
+                                <h3 class="plain">凉拌木耳</h3>
+                                <p class="ing">by 琢味先生</p>
+                                <p class="stat">
+                                    <span class="score"> 498</span>人收藏  <span class="pl20"> 471</span>人做过</p>
+                            </div>
+                        </div>
+                        <a href="" class="aflink"></a>
+                    </li>
+                    <li class='item'>
+                        <div class="afbox">
+                            <div class="zuic" style="background-image: url(../images/X3.jpg);">
+                            </div>
+                            <div class="zhtw">                           
+                                <h3 class="plain">凉拌木耳</h3>
+                                <p class="ing">by LAZY猫儿</p>
+                                <p class="stat">
+                                    <span class="score"> 793</span>人收藏  <span class="pl20"> 51</span>人做过</p>
+                            </div>
+                        </div>
+                        <a href="/" class="aflink"></a>
+                    </li>
+                    <li class='item'>
+                        <div class="afbox">
+                            <div class="zuic" style="background-image: url(../images/X4.jpg);">
+                            </div>
+                            <div class="zhtw">                           
+                                <h3 class="plain">木耳鸡蛋炒鸡丁</h3>
+                                <p class="ing">by mpvyes</p>
+                                <p class="stat">
+                                    <span class="score"> 28134</span>人收藏  <span class="pl20"> 124</span>人做过</p>
+                            </div>
+                        </div>
+                        <a href="" class="aflink"></a>
+                    </li>
+                    <li class='item'>
+                        <div class="afbox">
+                            <div class="zuic" style="background-image: url(../images/X5.jpg);">
+                            </div>
+                            <div class="zhtw">                           
+                                <h3 class="plain">剁椒木耳炒鸡蛋</h3>
+                                <p class="ing">by 缘豆儿</p>
+                                <p class="stat">
+                                    <span class="score"> 11025</span>人收藏  <span class="pl20"> 118</span>人做过</p>
+                            </div>
+                        </div>
+                        <a href="/" class="aflink"></a>
+                    </li>
+                    <li class='item'>
+                        <div class="afbox">
+                            <div class="zuic" style="background-image: url(../images/280_deb7b5bbe39c70bd0b1563817197ba0a.jpg);">
+                            </div>
+                            <div class="zhtw">                           
+                                <h3 class="plain">木须肉</h3>
+                                <p class="ing">by 国明的下午茶时光</p>
+                                <p class="stat">
+                                    <span class="score"> 35604</span>人收藏  <span class="pl20"> 211</span>人做过</p>
+                            </div>
+                        </div>
+                        <a href="" class="aflink"></a>
+                    </li>
+                    <li class='item'>
+                        <div class="afbox">
+                            <div class="zuic" style="background-image: url(../images/280_25db18ae71be7765d242de938ff34aa3.jpg);">
+                            </div>
+                            <div class="zhtw">                           
+                                <h3 class="plain">木耳炒豆芽</h3>
+                                <p class="ing">by 缘豆儿</p>
+                                <p class="stat">
+                                    <span class="score"> 11236</span>人收藏  <span class="pl20"> 140</span>人做过</p>
+                            </div>
+                        </div>
+                        <a href="" class="aflink"></a>
+                    </li>
+                    <li class='item'>
+                        <div class="afbox">
+                            <div class="zuic" style="background-image: url(../images/280_85bd9e01f0ca6103263033fba72324eb.jpg);">
+                            </div>
+                            <div class="zhtw">                           
+                                <h3 class="plain">小炒木耳</h3>
+                                <p class="ing">by 咖啡鱼潘</p>
+                                <p class="stat">
+                                    <span class="score"> 4288</span>人收藏  <span class="pl20"> 54</span>人做过</p>
+                            </div>
+                        </div>
+                        <a href="" class="aflink"></a>
+                    </li>
+                    <li class='item'>
+                        <div class="afbox">
+                            <div class="zuic" style="background-image: url(../images/280_02d574f805920af978901818133d6d72.jpg);">
+                            </div>
+                            <div class="zhtw">                           
+                                <h3 class="plain">木耳虾茸西葫芦卷</h3>
+                                <p class="ing">by 食尚先生——王森</p>
+                                <p class="stat">
+                                    <span class="score"> 1920</span>人收藏  <span class="pl20"> 10</span>人做过</p>
+                            </div>
+                        </div>
+                        <a href="" class="aflink"></a>
+                    </li>
+                    <li class='item'>
+                        <div class="afbox">
+                            <div class="zuic" style="background-image: url(../images/280_8eb13faaaa6a65986003ff767bfad377.jpg);">
+                            </div>
+                            <div class="zhtw">                           
+                                <h3 class="plain">色香味美的黑木耳炒鸡蛋</h3>
+                                <p class="ing">by 黄豆豆的一家</p>
+                                <p class="stat">
+                                    <span class="score"> 3496</span>人收藏  <span class="pl20"> 58</span>人做过</p>
+                            </div>
+                        </div>
+                        <a href="" class="aflink"></a>
+                    </li>
+                    <li class='item'>
+                        <div class="afbox">
+                            <div class="zuic" style="background-image: url(../images/280_02443aff9043f7d51a3f988ed0de115e.png);">
+                            </div>
+                            <div class="zhtw">                           
+                                <h3 class="plain">东北家常黑白菜</h3>
+                                <p class="ing">by 肖艾米</p>
+                                <p class="stat">
+                                    <span class="score"> 4583</span>人收藏  <span class="pl20"> 47</span>人做过</p>
+                            </div>
+                        </div>
+                        <a href="" class="aflink"></a>
+                    </li>
+                    <li class='item'>
+                        <div class="afbox">
+                            <div class="zuic" style="background-image: url(../images/280_f6a919d9cacc8cf8bb31ab49f57c855e.jpg);">
+                            </div>
+                            <div class="zhtw">                           
+                                <h3 class="plain">苦瓜拌秋耳</h3>
+                                <p class="ing">by 心清似水淡若云</p>
+                                <p class="stat">
+                                    <span class="score"> 3067</span>人收藏  <span class="pl20"> 29</span>人做过</p>
+                            </div>
+                        </div>
+                        <a href="" class="aflink"></a>
+                    </li>
+
+                    <li class='item'>
+                        <div class="afbox">
+                            <div class="zuic" style="background-image: url(../images/280_3c853953d80cdab967d4293f1089ef59.jpg);">
+                            </div>
+                            <div class="zhtw">                           
+                                <h3 class="plain">腐竹木耳拌黄瓜</h3>
+                                <p class="ing">by 金山茶</p>
+                                <p class="stat">
+                                    <span class="score"> 4010</span>人收藏  <span class="pl20"> 51</span>人做过</p>
+                            </div>
+                        </div>
+                        <a href=" class="aflink"></a>
+                    </li>
+                    <li class='item'>
+                        <div class="afbox">
+                            <div class="zuic" style="background-image: url(../images/280_b50cd98d706580899a6b315af5422311.jpg);">
+                            </div>
+                            <div class="zhtw">                           
+                                <h3 class="plain">枸杞木耳炒山药</h3>
+                                <p class="ing">by 简单煮意</p>
+                                <p class="stat">
+                                    <span class="score"> 24162</span>人收藏  <span class="pl20"> 165</span>人做过</p>
+                            </div>
+                        </div>
+                        <a href="" class="aflink"></a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div id="page">
+            <a href="" class="watchmore next">查看更多</a>
+        </div>  
+
+    <div id="btmPop"></div>
+    <div style="width:100%;background-color:#fff;padding-top:20px;display:none" class="gzh">
+        <img class="gzimg" src="" style="width:100%">
+    </div>
+    <footer class="foot">
+        <a href="javascript:scroll(0,0)" class="gotop">回到顶部</a>
+            <span>触屏版
+        <a href="" target="_blank">&nbsp;|&nbsp;网页版</a>
+        <a href="">&nbsp;|&nbsp;手机客户端</a></span>
+            <p>豆果网 京ICP证111032号 <a href="">食材大全</a></p>
+    </footer>
+    <script type="text/javascript">
+        function getoff(){      
+            $('#top').hide(); 
+            $('.tbox').hide();
+          }
+
+        $(document).ready(function(){
+            $('input[type=search]').bind('keypress', function(e){
+                var q = $.trim($(this).val());
+                if(e.keyCode == 13 && q != '')
+                {
+                    window.location.href = 'search/recipe/' + q;
+                }
+            });
+
+            $(".miti").click(function(){
+                var $cat = $(this).siblings('ul');
+                var $mus = $(this).children('.ic_adw');
+                var $cpr = $(this).parent().siblings().find('.ic_adw');
+                var $cpc = $(this).parent().siblings().find('ul');
+                $cpr.removeClass("ic_aup");
+                if($cat.is(":visible")){
+                    $cat.slideUp();
+                }else{
+                    $cat.slideDown();
+                }
+                if($mus.hasClass("ic_aup")){
+                    $mus.removeClass("ic_aup");
+                }else{
+                    $mus.addClass("ic_aup");
+                    $cpc.slideUp();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(function(){         
+            $(".menu-off").bind("click",function(){
+                var self = $(this);
+                $(".mine-box").slideToggle();             
+                if(self.hasClass("menu-on")) self.removeClass("menu-on");else self.addClass("menu-on");
+                    return false;
+            });
+            $(".mine-box li").bind("click",function(){
+                $(".mine-box").slideUp()
+                $(".menu-off").removeClass("menu-on");
+            });
+            
+        })  
+    </script>
+</body>
+</html>
