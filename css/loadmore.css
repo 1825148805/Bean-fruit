@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 
 .js-load-more{
 	padding:0 15px;
@@ -12,5 +12,4 @@
 	margin:20px auto;
 	border:0 none;
 	font-size:16px;
-	display:none;/*默认不显示，ajax调用成功后才决定显示与否*/
 }

@@ -1,4 +1,4 @@
-﻿*{
+*{
 	margin:0;
 	padding:0;
 	-webkit-tap-highlight-color:transparent;
@@ -6,7 +6,8 @@
 	-webkit-box-sizing:border-box;
 }
 body{
-	width: 100%
+	width: 100%;
+	height: 100%;
 	font-size: 14px;
 	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
 	color:#333;
@@ -23,14 +24,24 @@ a{
 a:hover{
 	text-decoration:none;
 }
-input{
+/*input{
 	border:none;
 	outline:none;
 	-webkit-appearance:none;
 
-}
+}*/
 ul,ol{
 	list-style:none;
+}
+.blackbg {
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    display: none;
 }
 .head_box{
 	width: 100%;
@@ -100,108 +111,142 @@ ul,ol{
 	background: url(../imags/icon_04.png) no-repeat 0 -35px;
 
 }
-/*导航栏*/
-.nav_box{
+/*优惠吗弹框*/
+#dele{
+	width: 270px;
 	margin:auto;
-	width: 100%;
-	height:45px;
-	overflow-x:auto;
+	z-index: 999;
+	margin-top:-50px;
 	background-color: white;
-}
-.nav_box::-webkit-scrollbar{
-    display: none;
-}
-.sencond_nav{
-	width:150%;
-	overflow: hidden;
-	
-}
-.sencond_nav>li{
-		width:12%;
-		padding:13px 0px;
-		float:left;
-		
-		font-size: 13px;
-		text-align: center;
-}
-/*菜单2*/
-.menu2{
+	border-radius: 5px;
+	position: relative;
+	top:-20px;
 	display: none;
 }
-/*商品列表*/
-
-.list_box{
-	padding:5px;
-	width:100%;
-	margin:auto;
-	overflow:hidden;
-	display: flex;
-	justify-content: space-around;
-	flex-direction:row;
-}
-.left_box{
-	width:50%;
-	
-}
-.right_box{
-	width:50%;
-	
-}
-.goods_list{
-	margin:5px;
-	width: 50%;
-	
-	justify-content: space-around;
-	background-color:white;
-	
-}
-.goods_list img{
+#dele>.dele_top{
 	width: 100%;
-	display: block;
+	height: 101px;
+	text-align: center;
+	z-index: 999;
 }
-.goods_list .text{
-	width: 80%;
-	margin:auto;
+#dele>.dele_top>.input{
+	border-radius: 5px;
+	width: 85%;
+	height: 35px;
+	margin: 10px auto;
+	border: 1px solid #dbdbdb;
+}
+#button_box{
+	width: 100%;
+	overflow: hidden;
+
+}
+#dele>.dele_top>.text{
+	display: inline-block;
+	margin:10px auto;
 	font-size: 14px;
-    color: #333;
+    color: #323232;
+
 }
-.text .commodity_name{
-	margin:5px 0;
+#button_box>a{
+	width: 50%;
+	float: left;
+	text-align: center;
+	padding: 10px 0px;
 }
-.goods_list .price{
-	color: #f46c31;
-    font-size: 18px;
-    font-weight: bold;
+#button_box>.back{
+	background: #c9c9c9;
+	border-bottom-left-radius: 5px;
 }
-.goods_list .text .sum{
-	color: #999;
-	margin:5px 0;
-    font-size: 12px;
-    position: relative;
+#button_box>.determine{
+	background: #fd7a40;
+	color: white;
+	border-bottom-right-radius: 5px;
 }
-.goods_list .text .sum span{
-	position: absolute;
-	right: 0px;
-	
-    font-size: 12px;
-}
-/*加载更多*/
-.more{
-	margin:5px auto;
-	width: 95%;
-	height: 40px;
-	background-color:white;
-	position: relative;
-	line-height: 40px;
+/*footer*/
+.footer{
+	width: 100%;
 	text-align:center;
-	font-size:16px;
+
 }
-.more span{
-	width:13px ;
-	height: 13px;
+
+.footer .go_top{
+	color: #999;
+	font-size: 14px;
+
+}
+.footer_nav{
+	margin: 10px 0px;
+}
+#information{
+	margin-top:10px;
+	font-size:12px;
+	cursor:pointer;
+}
+
+.btn_logo{
+	width: 60px;
+	height: 60px;
+	background-image:url(../imags/btn.png);
+	background-size:100%;
+	margin-left: 10px;
+	float: left;
+	vertical-align: middle;
+}
+.foottittle{
+	margin: 5px auto;
+	height: 67px;
+	max-width:640px;
+	min-width:320px;
+	width: 100%;
+	background-color:white;
+	display: flex;
+	align-items:center;
 	position: absolute;
-	background-image:url(../imags/箭头.png);
-	top:16px;
+	
+}
+.rigth_text{
+	flex: 1;
+	margin-left:10px;
+	font-size: 14px;
+
+}
+.rigth_text .text_2{
+	color: #323232;
+}
+.downapp{
+	width:65px;
+	background: #ec7309;
+    border-radius: 6px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    position:relative;
+    right:10px;
+   	
+}
+#displaymodal{
+	width:90%;
+	margin: 10px auto; 
+	border-radius: 5px;
+	line-height:40px;
+	text-align:center;
+	background: #fff;
+}
+#displaymodal>a{
+	color: #f46c31;;
+	font-size:14px;
+}
+#displaymodal .new_icon{
+	display:inline-block; 	
+	width: 24px;
+	height: 24px;
+	background-image:url(../imags/new_icon.png);
+	background-size:80%;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+
 }
 /*footer*/
 .footer{
