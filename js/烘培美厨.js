@@ -20,7 +20,7 @@ window.onload = function(){
 	var pageSize = 0; /*size*/
 	
 	/*Ê×´Î¼ÓÔØ*/
-	getData(pageStart, pageSize);
+	// getData(pageStart, pageSize);
 	
 	/*¼àÌý¼ÓÔØ¸ü¶à*/
 	$(document).on('click', '.more', function(){
