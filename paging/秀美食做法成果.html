@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/秀美食做法成果.css">
+	<script src="../js/swiper.min.js"></script>
+	<link rel="stylesheet" href="../css/swiper.min.css">
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+	<!--页面标题 -->
+	<div class = "head_box">
+		<a href="#" class ="back"></a>
+		<div class= "page_title"><span class="bean_fruit">豆果</span><span class="bean_fruit1">美食</span></div>
+	</div>
+	<!-- 导航栏 -->
+	<nav class = "nav">
+		<a href="#" class = "home"><b></b>首页</a>
+		<a href="#" class = "circe"><b></b>圈圈</a>
+		<a href="#" class = "show"><p></p></a>
+		<a href="#" class = "Buy_goods"><b></b>购好货</a>
+		<a href="#" class = "my"><b></b>我的</a>
+	</nav>
+	<div class="content_div_img">
+		<img src="../imags/300_4b489c6906569158c1b3b7b082f3ba17.jpg" alt="">
+	</div>
+	<div class="content_information">
+		<img src="../imags/70_u21921080565014111703.jpeg" alt="">
+		<p class="w_name">mm_0</p>
+		<p class="f_time">发布于2017.7.17</p>
+	</div>
+	<div class="like_div">
+		<div class="like_div1">浏览 2 喜欢 1 </div>
+		<div class="xin">
+			<div class="xin_1" onclick="xin(this)">喜欢</div>
+		</div>		
+	</div>
+	<div class="pl_div">
+		<textarea cols="30" rows="10" class="textarea"></textarea>
+		<input type="button" value="评论" class="pl_input">
+		<div class="fabiao_div"></div>
+	</div>
+	<div class="dgmsimg_div">
+		<img src="../imags/6cd6f59356000bc3998bcba7bd8d279e.gif" alt="">
+	</div>
+</body>
+<script type="text/javascript">
+	function xin(ele){
+		$(ele).text();
+		$(ele).css({"background":"url(../imags/QQ截图20170609145637.png) no-repeat","color":"rgb(255,110,104)"});
+	}
+	var zz2 = $(".fabiao_div");
+	$(".pl_input").click(function(){
+		var zz1 = $(".textarea").val();
+		var div = $("<div>");
+		div.text(zz1);
+		console.log(zz1);
+		zz2.append(div);
+		
+	})
+</script>
+</html>
