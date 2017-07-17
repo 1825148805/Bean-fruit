@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/更多分类.css">
+	<link rel="stylesheet" type="text/css" href="../css/global.css">
+	<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+	<style>
+		#backcolor{
+			background-color: #fff;
+		}
+	</style>
+</head>
+<body id = "backcolor">
+	<div class="hdbox"  id="head">
+	    <a href="javascript:history.back(-1)" class="leback"><i class="ic_back2"></i></a>
+ 		<a class="searbox"  href="javascript:void(0)" style="display:block;margin-bottom:10px">
+		    <input type="search" placeholder="搜索商品" style= "background-color: #F3F2F0; width: 80%; margin-left: 40px;">
+		</a>
+	     <span class="menu-off"></span>            
+	</div>
+	 <ul  class="mine-box">
+        <li><a href="" class="nindex">首页</a></li>
+        <li><a href="mall" class="nmall">购好货</a></li>
+        <li><a href="cart" class="ncart">购物车</a></li>
+        <li><a href="main/usercenter" class="nhome">个人中心</a></li>
+    </ul>
+	<div class="navigation_div">
+		<h4>热门搜索</h4>
+		<div class="button_div">
+			<a href=""><input type="button" value="烘烤必备"></a>
+			<a href=""><input type="button" value="大米"></a>
+		</div>
+	</div>
+	<div class="classification_div" style = "background-color: #fff;">
+		<h4>全部分类</h4>
+		<div class="classification_content">
+			<a href="">
+				<div>
+					<img src="../imags/277d825f794641bbfa57c81bf221bf15.png" alt="">
+				</div>
+				<span>半成品</span>
+			</a>
+			<a href="">
+				<div>
+					<img src="../imags/1751f3ac32393715951fed2d07b6c753.png" alt="">
+				</div>
+				<span>粮油调味</span>
+			</a>
+			<a href="">
+				<div>
+					<img src="../imags/8a884fbba918eef2246eeb92b0bf9191.png" alt="">
+				</div>
+				<span>烘焙美厨</span>
+			</a>
+			<a href="">
+				<div>
+					<img src="../imags/96af7405c4b1e90fc015d3d7ccf2aa08.png" alt="">
+				</div>
+				<span>休闲食品</span>
+			</a>
+			<a href="">
+				<div>
+					<img src="../imags/d00b9fcff8bf1735ebe09becdcb63ad1.png" alt="">
+				</div>
+				<span>精选生鲜</span>
+			</a>
+			<a href="">
+				<div>
+					<img src="../imags/b665e83d8fc53c21ec6a937eb169aad8.png" alt="">
+				</div>
+				<span>进口食品</span>
+			</a>
+			<a href="">
+				<div>
+					<img src="../imags/4e58f4ceb996b9eac50eb3d8b2ba5156.png" alt="">
+				</div>
+				<span>酒水饮料</span>
+			</a>
+			<a href="">
+				<div>
+					<img src="../imags/7920e63e19bfdeb2b7f6525236783b4f.png" alt="">
+				</div>
+				<span>厨房电器</span>
+			</a>
+			<a href="">
+				<div>
+					<img src="../imags/f76b195781a66098db24f2f1e4225df1.png" alt="">
+				</div>
+				<span>厨具餐具</span>
+			</a>
+		</div>
+	</div>
+	<div class="wb_navigation">
+		<a href="" class="gotop">回到顶部</a>
+		<div class="wb_navigation1">
+			<a href="">触屏版</a> | 
+			<a href="">网页版</a> | 
+			<a href="">手机客户端</a>
+		</div>
+		<div class="wb_navigation2">
+			<a href="">豆果网</a> 
+			<a href="">京ICP证111032号</a> 
+			<a href="">食材大全</a>
+		</div>
+	</div>
+	<div class="tryitatonce">
+		<div class="tryitatonce_img">
+			<img src="../imags/btn.png" alt="">
+			<div class="tryitatonce_div">
+				<p>下载APP</p>
+				<p>看世界名厨直播学做菜</p>
+			</div>
+		</div>
+		<div class="tryitatonce_input">
+			<input type="button" value="立刻试试">
+		</div>
+	</div>
+	<div class="zzz1"></div>
+</body>
+    <script type="text/javascript">
+	    function getoff(){      
+	        $('#top').hide(); 
+	        $('.tbox').hide();
+	      }
+
+	    $(document).ready(function(){
+	        $('input[type=search]').bind('keypress', function(e){
+	            var q = $.trim($(this).val());
+	            if(e.keyCode == 13 && q != '')
+	            {
+	                window.location.href = 'search/recipe/' + q;
+	            }
+	        });
+
+	        $(".miti").click(function(){
+	            var $cat = $(this).siblings('ul');
+	            var $mus = $(this).children('.ic_adw');
+	            var $cpr = $(this).parent().siblings().find('.ic_adw');
+	            var $cpc = $(this).parent().siblings().find('ul');
+	            $cpr.removeClass("ic_aup");
+	            if($cat.is(":visible")){
+	                $cat.slideUp();
+	            }else{
+	                $cat.slideDown();
+	            }
+	            if($mus.hasClass("ic_aup")){
+	                $mus.removeClass("ic_aup");
+	            }else{
+	                $mus.addClass("ic_aup");
+	                $cpc.slideUp();
+	            }
+	        });
+	    });
+	</script>
+	<script>
+		$(function(){         
+		    $(".menu-off").bind("click",function(){
+		        var self = $(this);
+		        $(".mine-box").slideToggle();             
+		        if(self.hasClass("menu-on")) self.removeClass("menu-on");else self.addClass("menu-on");
+		            return false;
+		    });
+		    $(".mine-box li").bind("click",function(){
+		        $(".mine-box").slideUp()
+		        $(".menu-off").removeClass("menu-on");
+		    });
+		    
+		})  
+    </script>
+</html>

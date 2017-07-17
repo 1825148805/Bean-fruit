@@ -35,7 +35,7 @@ body{max-width: 600px;margin: 0 auto;background: #f3f2f0;font-size: 14px;font-fa
 	-webkit-box-pack: justify;-moz-box-pack: justify;-webkit-flex-pack: justify;-ms-flex-pack: justify;-webkit-justify-content: space-between;
 	justify-content: space-between}
 .flex-1 {-webkit-box-flex: 1;-moz-box-flex: 1;width: -webkit-flex(1);-webkit-flex: 1;-ms-flex: 1;flex: 1}
-.ic_smsc, .ic_smscon, .ic_disable, .ic_nocoup, .ic_like, .ic_likeon, .ic_back2, .ic_back3, .ic_cnuo, .ic_end, .ic_yl, .ic_wx, .ic_zfb, .cart-b, .ic_city, .ic_tel, .ic_contact, .ic_addcoup, .ic_del, .ic_shop, .ic_select, .ic_selecton, .ic_ads, .ic_mright, .ic_back, .ic_tclogo, .xzlogo, .lodex, .icuser, .footlogo, .ic_colle, .ic_shicai, .ic_buzhou, .ic_tips, .ic_clsc, .ic_more, .btnoff, .ic_grmore, .ic_zan, .ic_zaned{background: url(../images/btn.png) no-repeat;background-size: 100px 500px;}
+.ic_smsc, .ic_smscon, .ic_disable, .ic_nocoup, .ic_like, .ic_likeon, .ic_back2, .ic_back3, .ic_cnuo, .ic_end, .ic_yl, .ic_wx, .ic_zfb, .cart-b, .ic_city, .ic_tel, .ic_contact, .ic_addcoup, .ic_del, .ic_shop, .ic_select, .ic_selecton, .ic_ads, .ic_mright, .ic_back, .ic_tclogo, .xzlogo, .lodex, .icuser, .footlogo, .ic_colle, .ic_shicai, .ic_buzhou, .ic_tips, .ic_clsc, .ic_more, .btnoff, .ic_grmore, .ic_zan, .ic_zaned{background: url(../imags/1123123.png) no-repeat;background-size: 100px 500px;}
 .ic_colle{display:inline-block;width: 16px;height: 16px;background-position:0 -176px;vertical-align:middle;margin-right:5px;}
 .ic_shicai{display:inline-block;width: 26px;height: 26px;background-position:0 -202px;vertical-align:top;margin-right:5px;}
 .ic_buzhou{display:inline-block;width: 26px;height: 26px;background-position:0 -230px;vertical-align:top;margin-right:5px;}
@@ -253,7 +253,7 @@ tle{padding: 0px 0 14px 72px; width: 55%;font-size:14px;font-weight:bold;display
 .new-name{line-height: 24px;}
 .home-sect-ads .new-ads{line-height: 22px;color: #999;word-break:break-all;padding-right: 8px;}
 .moren{color: #f46c31}
-.menu-off, .menu-on, .mine-box li a:before{background: url(../images/sort.png) no-repeat;background-size: 320px 60px;}
+.menu-off, .menu-on, .mine-box li a:before{background: url(../imags/sort.png) no-repeat;background-size: 320px 60px;}
 .menu-off, .menu-on{width: 36px;height:30px;display: block;position: absolute;right: 10px;top: 10px;}
 .menu-off{background-position: 4px -28px;}
 .menu-on{background-position: 4px 1px;}

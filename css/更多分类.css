@@ -1,0 +1,154 @@
+*{
+	margin:0;
+	padding:0;
+	-webkit-tap-highlight-color:transparent;
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+}
+body{
+	min-width: 320px;
+	max-width: 640px;
+	font-size: 14px;
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+	color:#333;
+	background-color: white;
+	/*border:2px solid rgb(231,231,231);*/
+}
+a{
+	color:#333;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+ul,ol{
+	list-style-type: none; 
+}
+input{
+	border: none;
+	outline: none;
+	-webkit-appearance:none;
+}
+.navigation_div{
+	margin-left: 10px;
+}
+.navigation_div>h4{
+	margin-top:10px;
+	margin-left:5px;
+}
+.button_div>a>input{
+	height: 27px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 15px;
+	border-radius: 20px;
+	background-color: white;
+	border:1px solid #dbdbdb;
+	color:#999;
+	margin-top: 10px;
+}
+.classification_div{
+	margin-top: 20px;
+}
+.classification_div>h4{
+	margin-top:10px;
+	margin-left:10px;
+}
+.classification_content{
+	width: 100%;
+	overflow: auto;
+	margin-top: 10px;
+	border-top: 1px solid #dbdbdb;
+}
+.classification_content>a{
+	display: block;
+	float: left;
+	width: 33.3%;
+	text-align: center;
+	position: relative;
+    border-right: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+.classification_content>a>div{
+	width: 100%;
+
+}
+.classification_content>a>div>img{
+	width: 50%;
+	display: block;
+	margin:auto;
+}
+.classification_content>a>span{
+	width: 100%;
+	display: block;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 15px;
+}
+.wb_navigation{
+	width: 100%;
+	height: 110px;
+	border:1px solid rgb(243,242,240);
+	text-align: center;
+	background-color: rgb(243,242,240);
+}
+.gotop{
+	display: block;
+	width: 100%;
+	color:#999;
+	margin-top:40px;
+}
+.wb_navigation1{
+	font-size: 16px;
+	margin-top: 10px;
+}
+.wb_navigation2{
+	font-size: 12px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+.tryitatonce{
+	width: 100%;
+	/*border:1px solid red;*/
+}
+.tryitatonce_img{
+	width: 70%;
+	/*border:1px solid blue;*/
+	margin:20px;
+	overflow: hidden;
+	display: inline-block;
+}
+.tryitatonce_img>img{
+	width: 20%;
+	display: block;
+	float: left;	
+}
+.tryitatonce_div{
+	float: left;
+	margin-left: 10px;
+	margin-top: 7px;
+}
+.tryitatonce_input{
+	width: 17%;
+	/*border:1px solid black;*/
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 30px;
+}
+.tryitatonce_input>input{
+	color:white;
+	background-color: rgb(236,115,9);
+	width: 100%;
+	height: 30px;
+	font-weight: bold;
+	font-size: 14px;
+	display: block;
+	border-radius: 5px;
+}
+.zzz1{
+	width: 100%；
+	height:10px;
+	background-color: rgb(243,242,240);
+	border:10px solid rgb(243,242,240);
+}
