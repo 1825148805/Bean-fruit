@@ -1,0 +1,50 @@
+html, body, menu, ul, ol, li, p, div, form, h1, h2, h3, h4, h5, h6, img, a img, input, textarea, fieldset {padding: 0;margin: 0;border: 0;}
+h1,h2, h3, h4, h5{font-weight:normal;}
+ul li{list-style: none;}
+a {color:#333;text-decoration:none;} 
+a:hover {text-decoration:none;}
+a,img,i,span,li {-webkit-touch-callout: none;-webkit-tap-highlight-color: transparent;-webkit-user-select: none;}
+div{-webkit-tap-highlight-color: transparent;}
+input[type=button], input[type=text], input[type=password]{-webkit-appearance:none;outline:none;box-shadow:none;}
+.clearfix:after{clear:both;content:".";display:block;font-size:0;height:0;line-height:0;visibility:hidden}
+.clearfix{zoom:1}
+body{max-width: 600px;margin: 0 auto;background: #f3f2f0;font-size: 14px;font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif;}
+.hcont{
+	display: inline-block;
+	font-size: 17px;
+}
+#head{
+	height:50px; 
+	width:100%;
+	background:#fff;
+	border: 1px solid #E7E6E4;
+}
+.leback{
+	width: 9px;
+	height: 16px;
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: -500px;
+}
+.hcont{
+	width: 100%;
+	vertical-align: center;
+	margin-top: -10px;
+	text-align: center;
+	display: inline-block;
+}
+.hcont>span{
+	margin-left:400px;
+	margin-top: 23px;
+	display: inline-block;
+}
+.ic_back2{
+	display: inline-block;
+	width: 9px;
+	height: 16px;
+	background-image: url(../images/btn1_03.png);
+	background-image: no-repeat;
+	background-position:0px 0px;
+	z-index: 999;
+	background-size:9px 16px;
+}

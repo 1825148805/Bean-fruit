@@ -1,0 +1,140 @@
+.recibox img{
+	width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+.recibox {
+    width: 100%;
+}
+.recibox h1 {
+    padding: 25px 10px 15px 14px;
+    font-size: 24px;
+    color: #333;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+.recibox span{
+	padding: 0 0 25px 0;
+	color: #999;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+.recibox p {
+    padding: 0 20px 0 24px;
+    color: #666;
+    line-height: 30px;
+    font-size: 17px;
+}
+.recipeby h3 {
+    color: #333;
+    width: 60%;
+    overflow: hidden;
+    height: 40px;
+    line-height: 40px;
+}
+.recipeby .mhead {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    display: block;
+    margin-right: 14px;
+}
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -webkit-flex-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.hardp {
+    line-height: 44px;
+    margin-left: 14px;
+    border-top: 1px dotted #e6e6e6;
+    border-bottom: 1px dotted #e6e6e6;
+    color: #999;
+}
+.foodsc{
+	font-size :17px;
+	color: #333;
+	line-height: 28px;
+	margin: 40px 0 15px 0;
+	position: relative;
+	text-align: center;
+	font-weight: bold;
+}
+.foodscd {
+    padding: 0 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.foodscd li {
+    line-height: 50px;
+    position: relative;
+    border-bottom: 1px solid #e5e3df;
+}
+.buzouscd {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.buzouscd li {
+    margin-bottom: 32px;
+}
+.foodsc {
+    font-size: 17px;
+    color: #333;
+    line-height: 28px;
+    margin: 40px 0 15px 0;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+}
+.tips {
+    margin: 0 20px 30px 20px;
+}
+.cretime {
+    color: #999;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 20px 30px 20px;
+}
+.tipsasd {
+    margin: 0 20px 10px 20px;
+}
+.p15 {
+    padding: 15px;
+}
+.buzouscd p {
+    line-height: 30px;
+    color: #666;
+    font-size: 17px;
+}
+.btn_collect {
+    background: #ff6619;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    width: 100%;
