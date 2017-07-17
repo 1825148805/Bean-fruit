@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <!-- in -->
+    <link href="http://i1.douguo.net/static/img/wap/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
+	<link href="css/global.css" charset="UTF-8" rel="stylesheet" type="text/css">
+    <script type='text/javascript' src='js/jquery-3.1.1.min.js'></script>		
+    <script type='text/javascript' src='js/swiper-3.4.2.min.js'></script>
+</head>
+<body data-custom="0">
+    <div class="top" id="top" style="display: none">
+        <i class="btnoff" onclick="getoff()"></i>
+        <i class="xzlogo"></i>
+        <p class="gettittle">下载APP<span>看世界名厨直播学做菜</span></p>
+        <a href="#" onclick="ongetapp()" class="getapp" style="width:70px">立刻试试</a>
+    </div>
+    <div id="top2" style="width: 100%;height: 60px;border-bottom: 1px solid #f3f2f0;z-index: 999;background: #fdfcfc;position: fixed;top: 0;left: 0;display:none">    
+        <i class="xzlogo" style="left:22px"></i>
+        <p class="gettittle" style="left:74px">最新鲜好玩的美食资讯<span>提高生活品质的技巧干货</span></p>
+        <a href="#" class="getapp" style="width:70px">我要关注</a>
+    </div>
+    <div class="tbox" style="display: none"></div>
+
+    <div class="header clearfix">
+        <i class="lodex"></i>
+        <div class="getsearch">
+            <input type="search" placeholder="搜索菜谱、食材">
+        </div>
+        <a href="#" class="icuser"></a>
+    </div>
+    <div class="ftop">
+        <a href="javascript:void(0);" class="ptop" onclick="window.scroll(0,0);" ><i class="icon_top"></i>顶部</a>
+    </div>
+
+    <div class="plr10">
+        <div class="swiper-container">
+            <div class="swiper-wrapper  clearfix">
+                <div class="swiper-slide">
+                <a href="cookbook/1573970.html" class="slidebox">
+                    <img src="images/400x300_b60dcb1a2f54a48fd07551dcc40015d7.png" class="wb100">
+                    <div class="slidenews">
+                        <img src="images/70_u08516434680706203905.jpeg">
+                        <p>香嫩可口 戳中入味的软肋</p>
+                        <p class="pname">過莱</p>
+                    </div>
+                </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="cookbook/1574592.html" class="slidebox">
+                        <img src="images/400x300_324c31bebd55fd0621a80ea32ce80171.jpg" class="wb100">
+                        <div class="slidenews">
+                            <img src="images/70_u6401659862385905232315.jpg">
+                            <p>咬一口酥脆掉渣 香到骨子里</p>
+                            <p class="pname">松鼠鱼77</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="cookbook/1428805.html" class="slidebox">
+                        <img src="images/400x300_b4e369c8d9d1c51804fd579b56bd0436.jpg" class="wb100">
+                        <div class="slidenews">
+                            <img src="images/70_u6398836694726306211026.jpg">
+                            <p>比餐厅味道更好 学会秒变大厨</p>
+                            <p class="pname">美食D秘密</p>
+                        </div>
+                    </a>
+                </div>
+            </div>        
+            <div class="swiper-pagination"></div>
+        </div>      
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                loop: true
+            });
+        </script>
+    </div>
+            <div class="riper br4 clearfix">
+            <a href="#">
+                <img src="images/1446026042.jpg">
+                <p>木耳</p>
+            </a>
+            <a href="#">
+                <img src="images/1446026450.jpg">
+                <p>苹果</p>
+            </a>
+            <a href="#">
+                <img src="images/1446100846.jpg">
+                <p>芋头</p>
+            </a>
+            <a href="#">
+                <img src="images/1446100499.jpg">
+                <p>菠菜</p>
+            </a>
+            <a href="paging/sort.html" class="alast clearfix">
+                <img src="images/more.png">
+                <p>全部分类</p>
+            </a>
+        </div>
+    <div class="tag-banner clearfix" >
+        <div class="tag clearfix" id='tag' >
+                 <a href="dish/collection/879" class="tag-li" style="background-image: url(images/1488859251.png)">
+                <div class="dish-info">
+                    <div class='tag-name tovers'>今日早餐</div>
+                    <div class='tag-num tovers'>1700人记录</div>
+                </div>
+                <div class='tag-dish'>
+                    <div class='tag-pic' style="background-image: url(images/200_a4ab3b893177a0224783ededf42f1ed4.jpeg)"></div>
+                    <div class='tag-pic' style="background-image: url(images/200_41e0b544b47f49887031a38c246a617f.jpeg)"></div>
+                </div>
+            </a>
+            <a href="dish/collection/881" class="tag-li" style="background-image: url(images/1488859271.png)">
+                <div class="dish-info">
+                    <div class='tag-name tovers'>今日午餐</div>
+                    <div class='tag-num tovers'>1039人记录</div>
+                </div>
+                <div class='tag-dish'>
+                    <div class='tag-pic' style="background-image: url(images/200_99182b929631f95f2df86e47b9f996b5.jpg)"></div>
+                    <div class='tag-pic' style="background-image: url(images/200_3e90e56c7be84080c9f43d2156fcd20f.jpg)"></div>
+                </div>
+            </a>
+            <a href="dish/collection/880" class="tag-li" style="background-image: url(images/1488859280.png)">
+                <div class="dish-info">
+                    <div class='tag-name tovers'>今日晚餐</div>
+                    <div class='tag-num tovers'>58人记录</div>
+                </div>
+                <div class='tag-dish'>
+                    <div class='tag-pic' sty#mage: url(images/200_8746eeafde9a8d99840de9f9980e86d7.jpg)"></div>
+                    <div class='tag-pic' stylimages_aea6a90073556c7e4fab3be827cd2eb6.jpg)"></div>
+                </div>
+            </a>            
+        </div>
+    </div>
+    <ul class='scr-tag clearfix'>
+        <li class=""></li>
+        <li class=""></li>
+        <li class=""></li>
+    </ul>
+    <div class="mlr10 clearfix">
+        <h2 class="linetittle">热门菜单
+            <a href="caipu/caidan" class="linemore">更多<i class="ic_more"></i></a>
+        </h2>         
+        <a href="caidan/5401068" class="menu-box br4">
+                <img src="images/750x480_a466a42a0e2343f29efb78dff3d707f5.png"  class="wb100 br4">
+                <div class='menu-con'>
+                <div class='menu-num'>51道菜谱</div>
+                <div class='menu-title'>这些视频菜谱让你秒变大厨！</div>
+                <div class='menu-user'>由请叫我小花儿创建</div>
+            </div>
+        </a>
+               
+        <a href="caidan/5381051" class="menu-box br4">
+                <img src="images/750x480_59668d766c6e43e3ec27c8724647167f.jpg"  class="wb100 br4">
+                <div class='menu-con'>
+                <div class='menu-num'>60道菜谱</div>
+                <div class='menu-title'>这么做，顿顿吃肉也能瘦！</div>
+                <div class='menu-user'>由请叫我小花儿创建</div>
+            </div>
+        </a>
+        </div>
+
+
+    <div class="mlr10 clearfix">
+        <h2 class="linetittle">主题文章
+            <a href="subject/lists" class="linemore">更多<i class="ic_more"></i></a>
+        </h2>
+          
+        <ul class="art-ul ">
+            <li class='br4 mb10'>
+                <a href="subject/detail/3725">
+                    <div class="art-li-pic">
+                        <img src="images/b05daa19923fa1b5037bebc62cac4c88.jpg" class='wb100 br4'>
+                    </div>                
+                    <div class="art-li-text">
+                        <h3>不用烤箱超好做的夏日小甜品，好吃得过分了！</h3>
+                        <p class='arttime'>2017-07-10</p>
+                        <p class='artcon'>夏天这样吃，清清凉凉才舒服！</p>                    
+                    </div>
+                </a>
+            </li>
+        </ul>    
+          
+        <ul class="art-ul ">
+            <li class='br4 mb10'>
+                <a href="subject/detail/3724">
+                    <div class="art-li-pic">
+                        <img src="images/89a473c6086728631787fbba369e29a7.jpg" class='wb100 br4'>
+                    </div>                
+                    <div class="art-li-text">
+                        <h3>怎样蒸出白胖胖、软乎乎的完美馒头？大师级详细攻略在这里！</h3>
+                        <p class='arttime'>2017-07-10</p>
+                        <p class='artcon'>史上最详细蒸馒头攻略，学不会算我输！</p>                    
+                    </div>
+                </a>
+            </li>
+        </ul>    
+          
+        <ul class="art-ul ">
+            <li class='br4 mb10'>
+                <a href="subject/detail/3723">
+                    <div class="art-li-pic">
+                        <img src="images/6d23ef7298ff7ab79b994851a8b2592c.jpg" class='wb100 br4'>
+                    </div>                
+                    <div class="art-li-text">
+                        <h3>长茄子、圆茄子大不同！夏天茄子这样做，营养开胃超好吃！</h3>
+                        <p class='arttime'>2017-07-08</p>
+                        <p class='artcon'>夏天吃茄子超级nice，但是长茄子圆茄子有啥区别呢？小果儿告诉你大不同！</p>                    
+                    </div>
+                </a>
+            </li>
+        </ul>    
+          
+        <ul class="art-ul ">
+            <li class='br4 mb10'>
+                <a href="#">
+                    <div class="art-li-pic">
+                        <img src="images/b4a949fc621835cbf6e3d78bb7fa84be.jpg" class='wb100 br4'>
+                    </div>                
+                    <div class="art-li-text">
+                        <h3>小暑 | 酷热来袭，这些清爽小凉菜好吃不上火~</h3>
+                        <p class='arttime'>2017-07-08</p>
+                        <p class='artcon'>天气热心情差，美味又好做的小凉菜给你夏日好心情~</p>                    
+                    </div>
+                </a>
+            </li>
+        </ul>    
+        </div>
+
+
+    <div class="mlr10 clearfix">
+        <h2 class="linetittle">今日佳作
+            <a href="recipe/today" class="linemore">更多<i class="ic_more"></i></a>
+        </h2>
+            <a href="cookbook/1576501.html" class="linewhat">
+            <img src="images/800x600_a2d46ffb07cafed35d371c57dcc365ed.jpg"  class="brt4">
+            <div class="brb4">
+                <p class="whattittle">拌方便面，用美食温暖她的心</p>
+                <p class="whatby">
+                    <img src="images/70_u9198274377172004121636.jpg">
+                </p>
+            </div>
+        </a>
+            <a href="#" class="linewhat">
+            <img src="images/800x600_c523725c5855e667da416e3e671be5ea.jpg"  class="brt4">
+            <div class="brb4">
+                <p class="whattittle">香煎鸡腿肉串</p>
+                <p class="whatby">
+                    <img src="images/70_u2483622349257011011724.jpg">
+                </p>
+            </div>
+        </a>
+        </div>
+
+
+    <div class="mlr10 clearfix">
+        <h2 class="linetittle">购好货热卖
+            <a href="#" class="linemore">购好货<i class="ic_more"></i></a>
+        </h2>
+            <div class="linesale">
+            <a href="#">
+                <img src="images/300_67f122c2449027252d39e30961f4ce30.jpg" class="brt4" />
+                <div class="dg brb4 clearfix">
+                    <div class="mc">
+                        <div class="mcc">
+                            <p>泰国 安来利 绿咖喱+马沙文咖喱+红咖喱酱汁 250ml/袋*3袋 泰国人气咖喱酱</p>
+                        </div>
+                    </div>
+                    <p class="saleprice">￥29.90 <span>￥69.90</span></p>
+                    <p class="salenum">剩余8件<span>包邮</span></p>
+                </div>
+            </a>
+        </div>
+            <div class="linesale">
+            <a href="#">
+                <img src="images/300_737e98852a5d73e45181facd79aa8ee5.jpg" class="brt4" />
+                <div class="dg brb4 clearfix">
+                    <div class="mc">
+                        <div class="mcc">
+                            <p>小滋生活 | 去皮绿豆脱皮绿豆500g | 东北杂粮</p>
+                        </div>
+                    </div>
+                    <p class="saleprice">￥12.90 <span>￥14.80</span></p>
+                    <p class="salenum">剩余9件</p>
+                </div>
+            </a>
+        </div>
+            <div class="linesale">
+            <a href="#">
+                <img src="images/300_5206622ab6bbc28a3871b8b6387a970d.jpg" class="brt4" />
+                <div class="dg brb4 clearfix">
+                    <div class="mc">
+                        <div class="mcc">
+                            <p>古蜀味道 超方便的懒人自热火锅（包邮）420g</p>
+                        </div>
+                    </div>
+                    <p class="saleprice">￥26.80 <span>￥29.80</span></p>
+                    <p class="salenum">剩余8件</p>
+                </div>
+            </a>
+        </div>
+            <div class="linesale">
+            <a href="#">
+                <img src="images/300_9109548e061938d8efb57c756a04e81e.jpg" class="brt4" />
+                <div class="dg brb4 clearfix">
+                    <div class="mc">
+                        <div class="mcc">
+                            <p>壹鼎点贰 农家自产杂粮孕妇月子米宝宝米山西小米1500g （实惠装）</p>
+                        </div>
+                    </div>
+                    <p class="saleprice">￥29.90 <span>￥35.00</span></p>
+                    <p class="salenum">剩余9件</p>
+                </div>
+            </a>
+        </div>
+        </div>
+     
+
+    <div class="mlr10 clearfix">
+        <h2 class="linetittle">热门活动
+            <a href="subject/huoDongList" class="linemore">更多<i class="ic_more"></i></a>
+        </h2>
+               
+        <a href="activity/syhd/detail/1148?&" class="linewhat">
+            <div class='huo-pic brt4' style="background-image: url(images/1499139773.jpg)""></div>
+            <div class="brb4">
+                <p class="huo-title tovers">#热门活动#  丘比沙拉汁，千份试吃大派发！</p>   
+                            <p class="huo-time">08月14日 00:00结束</p>
+                            
+            </div>
+        </a>
+               
+        <a href="activity/cpzj/index/1141?&" class="linewhat">
+            <div class='huo-pic brt4' style="background-image: url(images/1498667116.jpg)""></div>
+            <div class="brb4">
+                <p class="huo-title tovers">#热门活动#  嘉宝笑容厨房</p>   
+                            <p class="huo-time">08月04日 00:00结束</p>
+                            
+            </div>
+        </a>
+               
+        <a href="activity/cpzj/index/1131?&" class="linewhat">
+            <div class='huo-pic brt4' style="background-image: url(images/1497844169.jpg)""></div>
+            <div class="brb4">
+                <p class="huo-title tovers">#热门活动#  迎福进家 福临门面粉挂面新品上市菜谱征集活动</p>   
+                            <p class="huo-time">07月26日 00:00结束</p>
+                            
+            </div>
+        </a>
+               
+        <a href="activity/cpzj/index/1129?&" class="linewhat">
+            <div class='huo-pic brt4' style="background-image: url(images/1497438333.jpg)""></div>
+            <div class="brb4">
+                <p class="huo-title tovers">#热门活动#  父亲节 | 给老爸做道菜</p>   
+                    
+                <p class="huo-time">已结束</p>     
+                            
+            </div>
+        </a>
+        </div>
+
+
+    <div class="bff clearfix mlr10 mb10">
+        <p style='width: 40%;margin:auto'>
+            <img src="images/title_like.png" alt="猜你喜欢" class='wb100'>
+        </p>
+        <div class="clearfix list">
+                <a class="left relative" href="#">
+                <img class="wb100" src="images/300x300_e569b9ae49472a9611e64239f11f6a6c.jpg" alt="芝麻蛋包炒面">
+                <p>芝麻蛋包炒面</p>
+            </a>
+                <a class="left relative" href="#">
+                <img class="wb100" src="images/300x300_726e59e449342158e8ac2acc9d6c11b4.jpg" alt="蒜香煎猪排">
+                <p>蒜香煎猪排</p>
+            </a>
+                <a class="left relative" href="#">
+                <img class="wb100" src="images/300x300_30aed37c3f61feac5b749db5a8b91116.jpg" alt="果味苏打汽水-丘比果酱">
+                <p>果味苏打汽水-丘比果酱</p>
+            </a>
+                <a class="left relative" href="#">
+                <img class="wb100" src="images/300x300_aa1d307f9af1fcbd1b27a62e4dcf9375.jpg" alt="玫瑰山药蛋糕-丘比沙拉酱、果酱">
+                <p>玫瑰山药蛋糕-丘比沙拉酱、果酱</p>
+            </a>
+                <a class="left relative" href="#">
+                <img class="wb100" src="images/300x300_578a7d67989ea96159e27e0b033755f3.jpg" alt="小兔便当-丘比沙拉酱">
+                <p>小兔便当-丘比沙拉酱</p>
+            </a>
+                <a class="left relative" href="#">
+                <img class="wb100" src="images/300x300_adba9ca939a6cb3a88db30d6a764ff10.jpg" alt="芥末风煎拌扇贝柱">
+                <p>芥末风煎拌扇贝柱</p>
+            </a>
+                <a class="left relative" href="#">
+                <img class="wb100" src="images/300x300_ddb541e4e677730273ff89ae990bbedc.jpg" alt="黄瓜海鲜细卷">
+                <p>黄瓜海鲜细卷</p>
+            </a>
+                <a class="left relative" href="#">
+                <img class="wb100" src="images/300x300_dd109f7b6bfb385c52fcf74fe32a2fdf.jpg" alt="【补充能量必备面包】多谷物牛奶面包">
+                <p>【补充能量必备面包】多谷物牛奶面包</p>
+            </a>
+                <a class="left relative" href="#">
+                <img class="wb100" src="images/300x300_dd109f7b6bfb385c52fcf74fe32a2fdf.jpg" alt="藜麦鸡肉沙拉-丘比沙拉汁">
+                <p>藜麦鸡肉沙拉-丘比沙拉汁</p>
+            </a>
+                <a class="left relative" href="#">
+                <img class="wb100" src="images/300x300_dd109f7b6bfb385c52fcf74fe32a2fdf.jpg" alt="惊蛰有梨，春光俏，春雷响来万物长!">
+                <p>惊蛰有梨，春光俏，春雷响来万物长!</p>
+            </a>
+            </div>
+    </div>
+
+
+    <div id="btmPop"></div>
+    <div style="position: relative;width:100%;background-color:#fff;padding-top:20px;margin-bottom:10px;display:none" class="gzh">
+        <a href="" style="position: absolute;top: 0;left: 0;right: 11rem;bottom: 0;"></a>
+        <img class="gzimg" src="" style="width:100%">
+    </div>
+    <footer class="foot">
+        <a href="javascript:scroll(0,0)" class="gotop">回到顶部</a>
+    	    <span>触屏版
+        <a href="#" target="_blank">&nbsp;|&nbsp;网页版</a>
+        <a href="#">&nbsp;|&nbsp;手机客户端</a></span>
+            <p>豆果网 京ICP证111032号 <a href="#">食材大全</a></p>
+    </footer>
+    <div class="footer">
+        <p class="footlogo"></p>
+        <p class="foottittle">下载APP<span>看世界名厨直播学做菜</span></p>
+        <a href="#" onclick="ongetapp()" class="getapp fgetapp">立刻试试</a>
+    </div>
+</body>
+    <script type="text/template" id="dwnmodal">
+        <div class="downloadlead">
+            <div class="tu">
+                <i class="ic_lg1"></i>
+                <a href="javascript:$('.downloadlead').remove();"><i class="ic_lg2"></i></a>
+                <img src="http://i1.douguo.net/static/wap/img/popup.jpg">
+            </div>
+            <div class="wds">
+                <h2>请客官移驾客户端<br>或拨打4008515191咨询客服</h2>
+                <a href="#" class="zc hong">下载豆果美食App</a>
+            </div>
+        </div>
+    </script>
+    <script type="text/javascript">
+        function getoff(){
+            $.cookie('cls_download',1);
+            $('#top').hide(); 
+            $('.tbox').hide();
+          }  
+     </script>
+    <script type='text/javascript' src='js/jquery.cookie.js'></script>
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            bp.src = '/push.zhanzhang.baidu.com/push.js';
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+
+    <script>
+        $(document).ready(function(){
+            $('input[type=search]').bind('keypress', function(e){
+                var q = $.trim($(this).val());
+                if(e.keyCode == 13 && q != '')
+                {
+                    window.location.href = 'search/recipe/' + q+window.location.search;
+                }
+            })
+            var tag = document.getElementById('tag'),$width=$(window).width(),$scrollLeft;
+            var startX, moveEndX,  X, basicX,$nums,xEnd,lastX,$length = 2 || 0;
+            
+            $(".scr-tag li").css({width:100/($length+1) + '%'});  
+            $(".tag a").css({width:$width});
+            $(".scr-tag li:eq(0)").addClass('actli');
+
+            $("#tag").on("touchstart", function(e) {       
+                startX = e.originalEvent.changedTouches[0].pageX; 
+                basicX = $('#tag').position().left;  
+                $("#tag a.tag-li").find('.tag-pic').removeClass('stag');   
+                $("#tag a.tag-li").find('.tag-pic').removeClass('rtag'); 
+            });
+
+            $("#tag").on("touchmove", function(e) {
+                e.preventDefault();
+                moveEndX = e.originalEvent.changedTouches[0].pageX;        
+                X = moveEndX - startX; 
+                $nums = basicX + X;
+                if (basicX + X < 0 && basicX + X>-($width*$length)) {         
+                    tag.style.left = basicX + X + 'px'; 
+                }else{
+                    return
+                }       
+            });
+            $("#tag").on("touchend", function(e) {       
+                xEnd = Math.abs($('#tag').position().left); 
+          
+                var xx,yy,zz,index;
+                for(var i=0;i<=$length;i++){
+                    xx = $width*i/2,yy = i*$width,zz = $width *(1+i*2) /2;                
+                    if  (((xEnd >= xx) && (xEnd <= yy)) || ((xEnd >= yy) && (xEnd <= zz))){                
+                        lastX = i*$width ;  
+                        index = i;                  
+                        break;
+                    }   
+                }            
+                
+                setTimeout(function(){
+                    tag.style.left = - lastX + 'px';
+                    $(".scr-tag li:eq("+index+")").addClass('actli').siblings().removeClass('actli')
+                    if ( Math.abs(X) > 0 && X > 0 ) {
+                        $("#tag a.tag-li:eq("+index+")").find('.tag-pic').addClass('stag');
+                        $("#tag a.tag-li:eq("+index+")").siblings('a.tag-li').find('.tag-pic').removeClass('stag');
+                    }else{
+                        $("#tag a.tag-li:eq("+index+")").find('.tag-pic').addClass('rtag');
+                        $("#tag a.tag-li:eq("+index+")").siblings('a.tag-li').find('.tag-pic').removeClass('rtag');
+                    }
+                },100)
+            })
+         })  
+         window.onscroll = function(){
+            var pheight = window.screen.availHeight;
+            var documentHeight = document.body.scrollHeight;                
+            if(document.body.scrollTop>pheight){                
+                $('.ftop').show(250);
+            }else{
+                $('.ftop').hide(250);       
+            }
+        }
+    </script>
+</html>
