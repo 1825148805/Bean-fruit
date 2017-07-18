@@ -1,0 +1,560 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <meta name="apple-itunes-app" content="app-id=434212566">
+	<link href="../css/global.css?v=170711" charset="UTF-8" rel="stylesheet" type="text/css">
+	<link href="../css/mall.css" rel="stylesheet" type="text/css">	
+    <script type='text/javascript' src='../js/swiper.min.js'></script>
+
+</head>
+<body>
+<div class="top" id="top" style="display: none">
+    <i class="btnoff" onclick="getoff()"></i>
+    <i class="xzlogo"></i>
+    <p class="gettittle">下载APP<span>看世界名厨直播学做菜</span></p>
+    <a href="javascript:void(0)" onclick="ongetapp()" class="getapp" style="width:70px">立刻试试</a>
+</div>
+<div id="top2" style="width: 100%;height: 60px;border-bottom: 1px solid #f3f2f0;z-index: 999;background: #fdfcfc;position: fixed;top: 0;left: 0;display:none">    
+    <i class="xzlogo" style="left:22px"></i>
+    <p class="gettittle" style="left:74px">最新鲜好玩的美食资讯<span>提高生活品质的技巧干货</span></p>
+    <a href="" style="width:70px">我要关注</a>
+</div>
+<div class="tbox" style="display: none"></div>
+
+	<div class="hdbox">
+        <a href="javascript:history.back(-1);" class="leback"><i class="ic_back2"></i></a>        
+        <div class="hcont">
+                           购好货 
+                            
+        </div>
+    </div>
+    <!--<div class="icon clearfix mb10" id='navicon'>
+        <a href=''  class="left  icon1">
+            <b></b>
+            首页
+        </a>
+        <a href='post/lists'  class="left  icon2">
+            <b></b>
+            圈圈
+        </a>
+        <a href='topic/home'  class="left  show">
+            <p></p>
+        </a>
+        <a href='mall'  class="left onicon icon3">
+            <b></b>
+            购好货
+        </a>
+        <a href='main/usercenter'  class="left  icon4">
+            <b></b>
+            我的
+        </a>
+    </div>-->
+    
+    <script type="text/javascript">
+        window.onload = function (argument) {
+            var search_f = window.location.search;
+            if (search_f.indexOf('?f=') != -1) {
+                document.getElementById('navicon').style.display = 'none';
+            }
+        }
+    </script>
+    
+    
+
+    <a class="searbox"  href="" style="display:block;margin-bottom:10px">
+        <input type="search" placeholder="搜索商品">            
+    </a>
+	<div class="swiper-container">
+        <div class="swiper-wrapper" style="margin-bottom:0;">
+                    <div class="swiper-slide">
+            	<a href="">            	
+            	<img class="wb100" src="http://cp1.douguo.net/upload/banner/9/9/7/9992b64d8a4ac09a2b62dc44b9312c37.jpg">
+            	</a>
+            </div>
+                    <div class="swiper-slide">
+            	<a href="">            	
+            	<img class="wb100" src="http://cp1.douguo.net/upload/banner/e/1/6/e1ee8687001f5c97eaf9c290751eac16.jpg">
+            	</a>
+            </div>
+                       
+        </div>
+    <!-- Add Pagination -->
+        <div class="swiper-pagination" style="bottom:10px"></div>
+    </div>
+    <div class="mall-menu">
+        <div class="malla">
+            <a href="烘培美厨.html"><img src="http://i1.douguo.net/static/wap/img/mini_bake.png"><p>烘焙专区</p></a>
+        </div>
+        <div class="malla">
+            <a href="更多分类.html"><img src="http://i1.douguo.net/static/wap/img/mini_more.png"><p>更多分类</p></a>
+        </div>
+        <div class="malla">
+            <a href="优惠卷.html"><img src="http://i1.douguo.net/static/wap/img/mini_coup.png"><p>优惠券</p></a>
+        </div>
+        <div class="malla">
+            <a href="我的订单.html"><img src="http://i1.douguo.net/static/wap/img/mini_order.png"><p>我的订单</p></a>
+        </div>
+    </div>
+    <div class="three-item clearfix">
+        <h2 class="mall-title">抢购专区<span class="jjshu">距离本场结束</span></h2>
+        <div  id="count-down" data-time="13790">
+            <span class="timer"></span>
+            <span class="timer seckill-time"></span>
+            <span class="seckill-time-separator">:</span>
+            <span class="timer seckill-time"></span>
+            <span class="seckill-time-separator">:</span>
+            <span class="timer seckill-time"></span>
+      	</div>
+        <div class="mall-item2">
+                    <div class="mall-item-list2">
+                <a href="商品详情.html">
+                    <img class="wb100 brt4" src="http://i2.douguo.net/upload/tuan/3/9/6/300_3979da619c3930a78ad39e6cb292c376.jpg">
+                                        <div class="mall-list-box brb4">
+                        <h3>趁枣 若羌灰枣 1.5kg 经典布袋装（750g/袋*2袋）红枣上品</h3>
+                        <p class="mall-price1">￥89.9</p>
+                        <p class="mall-price0">￥155</p>
+                                                <!-- 限量 -->
+                        <div class="mall-box">
+                            <i class="ic_dego1"></i><!-- 限量LOGO -->            
+                            <div class="xili" style="border: 1px solid #fd7a40;color:#f46c31">
+                                <p style="width:0%;background-color:#ffe4d9;"></p>
+                                <span>剩余10件</span>
+                            </div>            
+                        </div>
+                                            </div>
+                </a>
+            </div>
+                    <div class="mall-item-list2">
+                <a href="商品详情.html">
+                    <img class="wb100 brt4" src="http://i2.douguo.net/upload/tuan/0/0/5/300_0005b848e847d015c580ec0def212a05.jpg">
+                                        <div class="mall-list-box brb4">
+                        <h3>小滋生活 | 秘鲁进口三色藜麦250g | 天然养生食品</h3>
+                        <p class="mall-price1">￥29.9</p>
+                        <p class="mall-price0">￥49</p>
+                                                <!-- 限量 -->
+                        <div class="mall-box">
+                            <i class="ic_dego1"></i><!-- 限量LOGO -->            
+                            <div class="xili" style="border: 1px solid #fd7a40;color:#f46c31">
+                                <p style="width:60%;background-color:#ffe4d9;"></p>
+                                <span>剩余4件</span>
+                            </div>            
+                        </div>
+                                            </div>
+                </a>
+            </div>
+                    <div class="mall-item-list2">
+                <a href="商品详情.html">
+                    <img class="wb100 brt4" src="http://i2.douguo.net/upload/tuan/9/b/c/300_9b35f4f3718eaf6c2bd8ad34440aaacc.jpg">
+                                        <div class="mall-list-box brb4">
+                        <h3>松桂坊 湘西后腿腊肉250g/袋 湘西腊肉 肉嫩不柴 </h3>
+                        <p class="mall-price1">￥24.8</p>
+                        <p class="mall-price0">￥26.8</p>
+                                                <!-- 限量 -->
+                        <div class="mall-box">
+                            <i class="ic_dego1"></i><!-- 限量LOGO -->            
+                            <div class="xili" style="border: 1px solid #fd7a40;color:#f46c31">
+                                <p style="width:20%;background-color:#ffe4d9;"></p>
+                                <span>剩余8件</span>
+                            </div>            
+                        </div>
+                                            </div>
+                </a>
+            </div>
+                    <div class="mall-item-list2">
+                <a href="商品详情.html">
+                    <img class="wb100 brt4" src="http://i2.douguo.net/upload/tuan/f/7/c/300_f783d32ff466f05b708832c2e6e3045c.jpg">
+                                        <div class="mall-list-box brb4">
+                        <h3>Lebengut 银光系列不锈钢西餐具套装 创意吃牛排刀叉 4件套</h3>
+                        <p class="mall-price1">￥9.9</p>
+                        <p class="mall-price0">￥16.8</p>
+                                                <!-- 限量 -->
+                        <div class="mall-box">
+                            <i class="ic_dego1"></i><!-- 限量LOGO -->            
+                            <div class="xili" style="border: 1px solid #fd7a40;color:#f46c31">
+                                <p style="width:40%;background-color:#ffe4d9;"></p>
+                                <span>剩余6件</span>
+                            </div>            
+                        </div>
+                                            </div>
+                </a>
+            </div>
+                    <div class="mall-item-list2">
+                <a href="商品详情.html">
+                    <img class="wb100 brt4" src="http://i2.douguo.net/upload/tuan/a/3/7/300_a3f6b1185296f92588008362108e8817.jpg">
+                                        <div class="mall-list-box brb4">
+                        <h3>米奥 MIGLIO 精选西冷牛排 180克*4包</h3>
+                        <p class="mall-price1">￥84</p>
+                        <p class="mall-price0">￥92</p>
+                                                <!-- 限量 -->
+                        <div class="mall-box">
+                            <i class="ic_dego1"></i><!-- 限量LOGO -->            
+                            <div class="xili" style="border: 1px solid #fd7a40;color:#f46c31">
+                                <p style="width:0%;background-color:#ffe4d9;"></p>
+                                <span>剩余10件</span>
+                            </div>            
+                        </div>
+                                            </div>
+                </a>
+            </div>
+                    
+        </div>
+    </div>
+<!--下场抢购的按钮，暂时不需要-->
+<!--<div class="item-watch"><a class="br6" href="mall/rush">下场预告<span>2017-07-18 20:00:00</span>开抢<i class="ic_grmore"></i></a></div>-->
+<div class="three-item clearfix">
+    <h2 class="mall-title">必败专区</h2>
+    <div class="mall-item">
+    	            
+            <a href="" class="alock">
+	            <img class="wb100 br4" src="http://cp1.douguo.net/upload/tuan/8/2/d/82cf34699549ba511169b3299d18f95d.jpg">
+	        </a>
+                    
+            <a href="" class="alock">
+	            <img class="wb100 br4" src="http://cp1.douguo.net/upload/tuan/f/f/9/ff8bb02163fb88ead935dc07a530c369.jpg">
+	        </a>
+                    
+            <a href="" class="alock">
+	            <img class="wb100 br4" src="http://cp1.douguo.net/upload/tuan/1/6/c/16c723053b8c8636a03f78ea41e8d61c.jpg">
+	        </a>
+                    
+            <a href="" class="alock">
+	            <img class="wb100 br4" src="http://cp1.douguo.net/upload/tuan/4/7/2/471830899865c26b637d723aadd860e2.jpg">
+	        </a>
+               
+    </div>
+</div>
+<div class="three-item clearfix" id='goods-list'>
+    <h2 class="mall-title">更多热卖品</h2>
+    <!--本模块商品图请取220的正方形的图片，为了适配分类标签高度-->
+</div>
+<div class="item-watch"><a class="br6" id="get-more" data-param="0_0_0" href="javascript:void(0);">点击加载更多<i class="ic_grmore"></i></a></div>
+<div class="lineard" style="display:none" id="end">
+   <i class="ic_end"></i>
+</div>
+<a href="" class="cart-b">
+    <span style="display:none"></span>
+</a>
+<div class="citybg">
+    <div class="city-title">
+        <span>返回</span><h2>城市选择</h2>
+     </div>
+    <div class="city-content" id="local-city-list">
+    </div>
+</div>
+
+
+<div id="btmPop"></div>
+<footer class="foot">
+    <a href="javascript:scroll(0,0)" class="gotop">回到顶部</a>
+        <span>触屏版
+    <a href="" target="_blank">&nbsp;|&nbsp;网页版</a>
+    <a href="">&nbsp;|&nbsp;手机客户端</a></span>
+        <p>豆果网 京ICP证111032号 <a href="">食材大全</a></p>
+</footer>
+<div class="footer" style="margin-bottom:55px;">
+    <p class="footlogo"></p>
+    <p class="foottittle">下载APP<span>看世界名厨直播学做菜</span></p>
+    <a href="javascript:void(0)" onclick="ongetapp()" class="getapp fgetapp">立刻试试</a>
+</div>
+<div class="clearfix icon fix">
+    <a href=''  class="left  icon1"></a>
+    <a href=''  class="left  icon2"></a>
+    <a href=''  class="left  icon3"></a>
+    <a href=''  class="left onicon icon4"></a>
+</div>
+</body>
+<script type='text/javascript' src='http://i1.douguo.net/static/wap/js/jquery-2.1.4.min.js'></script>
+<script type='text/javascript' src='http://i1.douguo.net/static/wap/js/jquery.cookie.js'></script>
+<script type='text/javascript' src='http://i1.douguo.net/static/wap/js/underscore-min.js'></script>
+<script type='text/javascript' src='http://i1.douguo.net/static/wap/js/backbone-min.js'></script>
+<script type='text/javascript' src='http://i1.douguo.net/static/wap/js/mobile.js?151209V1'></script>
+<script src="http://i1.douguo.net/static/js/wap/lazyload.js?yupeng20150807"></script>
+<script type="text/javascript">
+    $('img[data-original]').lazyload();
+    $(function(){             
+        var showDownload    = $.cookie('cls_download');
+        var source          =  getQueryString('f');
+        if (typeof showDownload == 'undefined' || showDownload != '1') {
+			
+			//if (!/ipad|iphone|mac/i.test(navigator.userAgent)) {
+				if (source != '360box' && source != 'sx' && source != 'bs') {
+					$('.top').show();
+					$('.tbox').show();
+				}
+			//}
+        }
+		var ua = navigator.userAgent.toLowerCase();
+		if(ua.match(/MicroMessenger/i)=="micromessenger"){
+            $('#top2').show();
+            $('#top').hide();
+            $('.tbox').show();                    
+        }
+        // $(".menu-off").bind("click",function(){
+        //     var self = $(this);
+        //     $(".mine-box").slideToggle();             
+        //     if(self.hasClass("menu-on")) self.removeClass("menu-on");else self.addClass("menu-on");
+        //         return false;
+        // });
+    })  
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '/push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script> 
+
+<script type="text/template" id="local-list-tpl">
+    <% _.each(goodsList,function(item){%>
+    <div class="mall-item-list">
+    <a href="">
+    <img class="wb100 brt4" src="<%= item.image %>">
+    <div class="mall-list-box brb4">
+    <h3><%= item.name %></h3>
+    <p class="mall-price1">￥<%= item.price %></p>
+    </div>
+    </a>
+    </div>
+    <% }); %>
+</script>
+<script type="text/template" id="city-list-tpl">
+    
+    <% if ( select != '' ){ %>
+    <p><input type="text" value="定位城市"disabled="disabled" /></p>
+    <p style="background:#fff;"><i class="ic_city"></i><input type="button" value="<%= select %>"  /></p>
+    <% } %>
+    <p><input type="text" value="<%= select == '' ? '全部城市' : '其他城市' %>"disabled="disabled" /></p>
+    <ul class="qtcity">
+        <% _.each( list, function( listItem ){ %>
+        <li><input type="button" value="<%= listItem %>" onclick=" getLocalGoods('<%= listItem %>');" /></li>
+        <% }); %>
+    </ul>
+    <div class="cityqd">更多城市即将开放，敬请期待</div>
+    
+</script>
+<script type="text/template" id="goods">
+
+<div class="mall-two">
+	<a href="">
+        <img class="wb100 brt4" src="http://i1.douguo.net/static/img/wap/yshc.png" data-original="<%= image %>"  />
+            <%if (surplus_stock == 0){%>
+                <span class="qgl">已抢光</span>
+            <%}%>
+                <div class="dg brb4 clearfix">
+                    <div class="mc">
+                        <div class="mcc">
+                            <p><%= name %></p>
+                        </div>
+                    </div>
+                    <p class="saleprice">￥<%= price %> <%if (ori_price){%><span>￥<%= ori_price %></span><%}%></p>
+                    <p class="salenum"><%= all_sale_count %>人已付款<span><%if (express_fee ==0){%>包邮<%}%></span></p>
+                </div>
+    </a>
+</div>
+
+</script>
+<script type="text/template" id="keywords">
+<div class="mall-sortout">
+        <div class="mall-sortin clearfix">
+            <div class="sor"><a href="javascript:void(0);"><%= name %></a></div>
+			<%_.each(keywords, function(item) {%>
+                        <div class="sor"><a href=""><%= item.keyword%> </a></div>
+             <%});%>
+        </div>
+</div>
+</script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        loop:true
+    });
+</script>
+<script>
+
+$(function(){
+    $('#show-city').click(function(){
+        $(".citybg").show();
+    });
+    $(".bcp_city").click(function(){
+        $(".citybg").show();
+    });
+    $(".city-content input").click(function(){
+        $(".citybg").hide();
+    });
+    $(".city-title span").click(function(){
+        $(".citybg").hide();
+    });
+    var Width1 = ($(document).width()-30)/2;        
+    $(".mall-two img").css("width",Width1).css("height",Width1);
+});
+function getLocalGoods(city) {
+    $.ajax({
+        url:"mall/localgoods",
+        type:"POST",
+        dataType:'json',
+        data:{'city':city},
+        success:function(res){
+            console.log(res);
+            if (res.status == "OK") {
+                if (!_.isEmpty(res.data.list)) {
+                    var cityList = _.template($('#city-list-tpl').html().replace(/\t/g, ''))({
+                        select: res.data.select,
+                        list: res.data.list
+                    });
+                    $('#local-city-list').html(cityList);
+                }
+                if (!_.isEmpty(res.data.goods_list)) {
+                    var goodsList = _.template($('#local-list-tpl').html().replace(/\t/g, ''))({goodsList: res.data.goods_list});
+                    $('#local-list').html(goodsList);
+                } else {
+                    $('#local-list').html('');
+                }
+                if (res.data.select != '') {
+                    $('.city_btn').html(res.data.select);
+                } else {
+                    $('.city_btn').html('请选择');
+                }
+                var localMoreHtml = (typeof res.data.url != 'undefined' && res.data.url !='')? '<a class="br6" href="'+res.data.url+'">查看更多'+city+'生鲜、半成品<i class="ic_grmore"></i></a>':'';
+                console.log(localMoreHtml);
+                if (localMoreHtml != '') {
+                    $('#local-more').html(localMoreHtml);
+                }
+                $.cookie('city', res.data.select, {expires: 7});
+                $(".citybg").hide();
+            }
+        }
+    });
+}
+$(function(){
+	function getCityName() {
+        return '';
+	var cityname = $.cookie('city');
+
+        	if (!(cityname) && navigator.geolocation) {
+			 navigator.geolocation.getCurrentPosition(function (position) {
+			var lat = position.coords.latitude;
+			var lon = position.coords.longitude;
+                 var point = new BMap.Point(lon, lat);
+			var gc = new BMap.Geocoder();
+			gc.getLocation(point, function (rs) {
+				cityname = rs.addressComponents.city;
+				$.cookie('city', cityname,{expires: 7});
+			});
+		});	}
+		return cityname;
+	}
+	var city = getCityName();
+    city    = city ? city : '';
+   // getLocalGoods(city);
+    $('.qtcity').on('click','li',function (){
+        var cityname = $(this).find('input').val();
+        console.log(cityname);
+        getLocalGoods(cityname);
+    });
+});
+$(function(){
+        var setId = countDown($("#count-down"), "data-time",function(dom,attribute){
+        var sec = $(dom).attr(attribute);
+        if(!(sec >= "0")){
+            return;
+        }
+        var int_day=Math.floor(sec/(60*60*24));
+        var int_hour=Math.floor((sec-int_day*24*60*60)/3600);
+        var int_minute=Math.floor((sec-int_day*24*60*60-int_hour*3600)/60);
+        var int_second=Math.floor(sec-int_day*24*60*60-int_hour*3600-int_minute*60);
+        if(int_hour < 10)
+        int_hour = "0" + int_hour;
+        if(int_minute < 10)
+        int_minute = "0" + int_minute;
+        if(int_second < 10)
+        int_second = "0" + int_second;
+        var time = new Array();
+            time[0]=int_day;
+            time[1]=int_hour;
+            time[2]=int_minute;
+            time[3]=int_second;
+        sec = (sec - 1 > 0) ? sec - 1 : 0;
+        $(dom).attr(attribute, sec);
+        var domArr = $(dom).find(".timer");
+        for(var i = 0; i < 4; i++){
+          if($(domArr[i]).text() != time[i]){
+            $(domArr[i]).text(time[i]);
+              }
+            }
+          });
+        });
+    function countDown( domArr, attribute, callback ){
+      var code = function(){
+        var len = domArr.length;
+        for(var i = 0;i < len; i++){
+          var foo = Number($(domArr[i]).attr( attribute ));
+          callback(domArr[i], attribute);
+        }
+      }
+      var setId = window.setInterval(code, 1000);
+      return setId;
+    }
+function getMoreGoods(offset,limit,block_num){
+		$.ajax({
+			type	: "POST",
+			url		: "mall/all/"+offset+''+limit,
+            data    :{
+                    tsn:block_num
+            },
+			dataType: "json",
+			success : function (data) {
+				if (data.status == "OK") {
+					var goodsDiv = _.template($("#goods").html().replace(/\t/g, ''));
+					var keysDiv  = _.template($("#keywords").html().replace(/\t/g, ''));
+					var htmlStr = '';
+					data.data.list.map(function(item) {
+						if ('undefined' != typeof (item.keywords)) {
+							htmlStr += keysDiv(item);
+						} else if ('undefined' != typeof (item.price)) {
+							htmlStr += goodsDiv(item);
+						}
+					});
+					$('#goods-list').append(htmlStr);
+                    $('img[data-original]').lazyload();
+                    if (data.data.list.length < limit) {
+                        $("#get-more").html('<i class="ic_end"></i>').unbind();
+                        $('#get-more').hide();
+                        $('#end').show();
+                    } else {
+                        var newOffset = parseInt(offset) + parseInt(limit);
+                        $("#get-more").attr('data-param',newOffset+'_'+limit+'_'+data.data.tsn);
+                    }
+				}				
+			}
+		});
+}
+$(document).ready(function(){
+    getMoreGoods(0,10);
+    $('#get-more').on('click', function () {
+        var param   = $(this).attr('data-param').split('_');
+        getMoreGoods(param[0],param[1],param[2]);
+    });
+    (function () {
+        var cartNum = $.cookie('cartNum');
+        if (cartNum && cartNum > 0) {
+            if (cartNum > 99) {
+                $('.cart-b span').html('99+');
+            } else {
+                $('.cart-b span').html(cartNum);
+            }
+            $('.cart-b span').show();
+        }
+    })();
+});
+
+</script>
+</html>

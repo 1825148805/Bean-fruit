@@ -42,7 +42,7 @@ body{max-width: 600px;margin: 0 auto;background: #f3f2f0;font-size: 14px;font-fa
 	display: inline-block;
 	width: 9px;
 	height: 16px;
-	background-image: url(../images/btn1_03.png);
+	background-image: url(../imags/btn1_03.png);
 	background-image: no-repeat;
 	background-position:0px 0px;
 	z-index: 999;
