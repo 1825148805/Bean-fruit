@@ -17,4 +17,5 @@ window.onload = function(){
 			$($(".big_list")[randomNum]).css("display","block");
 				
 		});
+		
 }
