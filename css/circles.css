@@ -1,0 +1,277 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color:transparent;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+body{
+	font-size: 14px;
+	font-family: "Î¢ÈíÑÅºÚ";
+	color: #333;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+input{
+	border:none;
+	outline: none;
+	-webkit-appearance:none;
+}
+ul,ol{
+	list-style: none;
+}
+.index{
+	max-width: 640px;
+	min-width: 320px;
+}
+.header{
+	width: 100%;
+	margin-top:2em;
+}
+.symbol{
+	font-size: 3.5em;
+	margin-left: 1em;
+}
+.circle{
+	font-size: 3.5em;
+	margin-left:7em;
+
+}
+.header2{
+	height:12em;
+	width:100%;
+	border: 1px  solid  rgb(214,214,214);
+	border-left: none;
+	border-bottom: none;
+	border-right: none; 
+	margin:auto;
+}
+.Tab{
+	width: 100%;
+}
+.picture{
+	height: 7em;
+	width:7em;
+	margin-top: 1em;
+	margin-left:5.3em; 
+}
+p{
+	font-size: 2.5em;
+	margin-left: 2.3em;
+}
+.Tab1{
+	display: inline-block;
+}
+.picture1{
+	width: 13em;
+	height: 7em;
+	margin-bottom:1.3em;
+	margin-left:1.5em;
+}
+.Tab2{
+	display: inline-block;
+}
+.header3{
+	width: 100%;
+	height:1em;
+	background-color: rgb(214,214,214);
+}
+html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+        margin:auto;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 350px;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 30px;
+        background: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    img{
+    	width: 100%;
+    }
+.header4{
+	width: 100%;
+	height:5em;
+	background-color: rgb(214,214,214);
+}
+.swiper-pagination{
+	line-height:5em;
+	margin-left: 440px;
+	 
+}
+.frist_circles{
+	width: 100%;
+	display: inline-block;
+}
+.print{
+	width: 17%;
+	height: 150px;
+	display: inline-block;
+	margin:10px;
+	padding: 10px;
+}
+.Text_description{
+	width: 100%;
+	margin:10px;
+	padding: 10px;
+}
+.description>a{
+	width: 17%;
+	font-size: 2.8em;
+	margin:10px;
+	padding: 9px;
+}
+.header5{
+	width: 100%;
+	height: 1.5em;
+	background-color: rgb(243,242,240);
+}
+.Hot_post{
+	font-size: 2.8em;
+	text-align: center;
+	margin:10px;
+	padding: 10px;
+}
+.project{
+	font-size: 4em;
+	text-align: center;
+	margin:10px;
+	padding: 10px;
+	width: 100%;
+	display: inline-block;
+}
+.project>.first{
+	width: 30%;
+	display: inline-block;
+}
+.project>.name{
+	font-size: 0.8em;
+	text-align: center;
+	margin:10px;
+	padding: 10px;
+	display: inline-block;
+	width: 100%;
+}
+.time{
+	width: 100%;
+	text-align: left;
+	overflow: hidden;
+}
+.time>a{
+	margin-top: 20px;
+	float:left;
+	display:inline-block;
+}
+.time>.User_name{
+	color: red;
+	font-size: 0.7em;
+	text-align: left;
+	margin-left: 1em;
+}
+.time>.diary{
+	color: rgb(214,214,214);
+	font-size: 0.7em;
+}
+.Reply{
+	width: 80px;
+	height: 75px;
+	margin-left:2.3em;
+
+}
+.number{
+	display: block;
+	margin-top: 35px;
+	font-size: 0.7em;
+	color: rgb(214,214,214);
+}
+.header6{
+	width: 100%;
+	height: 0.7em;
+	background-color: rgb(243,242,240);
+}
+.View_more{
+	height: 9em;
+	width: 100%;
+	background-color: rgb(214,214,214);
+	overflow: hidden;
+	padding: 20px;
+	
+}
+.More{
+	width: 90%;
+	height: 80px;
+	background-color: white;
+	margin:auto;
+	font-size: 45px;
+	text-align: center;
+	line-height: 2em;	
+}
+.Consultation{
+	width: 100%;
+}
+.print2{
+	width: 24.5%;
+	height: 150px;
+	display: inline-block;
+	background-color: white;
+	padding:0px;
+	margin:0px;
+	
+}
+.Icon{
+	position: fixed;
+	bottom: 0px;
+	height: 150px;
+	width: 25%;
+}
+.Icon2{
+	position: fixed;
+	bottom: 0px;
+	height: 150px;
+	width: 25%;
+}
+.Icon3{
+	position: fixed;
+	bottom: 0px;
+	height: 150px;
+	width: 25%;
+}
+.Icon4{
+	position: fixed;
+	bottom: 0px;
+	height: 150px;
+	width: 25%;
+	
+}
+
+
+

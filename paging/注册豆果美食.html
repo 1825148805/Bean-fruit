@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/register.css">
+	
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<!-- <script src = "js/jquery.validate.js"></script> -->
+	<!-- <script src = "js/messages_zh.min.js"></script> -->
+</head>
+<body>
+		<div class="food">注册豆果美食</div>
+		<div class="error"></div>
+		<div class="background"><br><br>
+		<form action="" id="form1">
+			<input type="text" placeholder="手机号" class="Sign_in"><br><br>
+
+			<input type="text" placeholder="昵称" class="Sign_in">
+			<br><br>
+			
+			<input type="password" placeholder="密码" class="Sign_in"><br><br>
+
+			<input type="checkpassword" placeholder="确认密码：" class="Sign_in"><br><br><br>
+			
+
+			<span><input type="text" placeholder="验证码" class="listing"><input type="submit" class="entry" value="获取验证码"></span>
+			<br><br>
+		
+			<div class="Agreement">点击注册意味着您同意豆果美食的<span class="Use_protocol">《使用协议》</span></div><br><br>
+				
+			<div class="pay"><input type="button" value="注册" class="one"></div><br><br>
+			<div class="pay2"><input type="submit" value="已有账号,登录" class="two"></div>
+		</form>
+			<div class="tail">
+				<a href="" class="tail1">触屏版|</a>
+				<a href="" class="tail1">网页版|</a>		
+				<a href="" class="tail1">手机客户端</a>
+			</div>
+			<div class="tail2">
+				<a href="">豆果网 京icp证111032号 食材大全</a>
+			</div>
+		</div>
+		<script>
+		$(".one").click(function(){
+			
+					var number = $($(".Sign_in")[0]).val();
+					var passowrd = $($(".Sign_in")[2]).val();
+					var passowrd1 = $($(".Sign_in")[3]).val();
+					 if(!(/^1[3|4|5|8][0-9]\d{4,8}$/.test(number))){ 
+			        	$(".error").css({"display":"block"});
+			        	$(".error").text("请输入手机号码");
+					}
+					if(!(/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/.test(passowrd))){ 
+			        	$(".error").css({"display":"block"});
+			        	$(".error").text("密码为6~20位字母数字组合");
+					}else{
+						if(passowrd1!==passowrd){
+							$(".error").text("两次密码不一致");
+						}
+					}
+					
+
+
+
+		});
+		
+		// $("#form1").validate({
+		// 	rules:{
+		// 		username:"required",
+		// 		password:{
+		// 			required:true,
+		// 			rangelength:[6,15]
+		// 		},
+		// 		checkPassword:{
+		// 			equalTo:"#pwd"
+		// 		},
+		// 		email:{
+		// 			email:true,
+		// 			required:true
+		// 		},
+		// 		age:{
+		// 			required:true,
+		// 			digits:true,
+		// 			min:0
+		// 		},
+		// 		number:"required"
+		// 	},
+		// 	messages:{
+		// 		username:"请输入用户名",
+		// 		password:{
+		// 			required:"请输入密码",
+		// 			rangelength:"请输入{0}到{1}位密码"
+		// 		},
+		// 		checkPassword:{
+		// 			equalTo:"两次输入的密码不相同"
+		// 		},
+		// 		email:{
+		// 			email:"请输入正确邮箱地址",
+		// 			required:"请输入邮箱地址"
+		// 		},
+		// 		age:{
+		// 			required:"请输入年龄",
+		// 			digits:"请输入正整数",
+		// 			min:"请输入正整数"
+		// 		},
+		// 		number:"请填写您的手机号码"
+		// 	}
+		// })			
+		</script>
+</body>
+</html>
