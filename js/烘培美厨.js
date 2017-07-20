@@ -13,21 +13,27 @@ window.onload = function(){
 
 		});
 
+		for(var i =0;i<$(".goods_list").length;i++){
+			$($(".goods_list")[i]).click(function(){
+				window.location = "商品详情.html"
+				console.log($(".goods_list").length);
 
+			})
+		}
 	/*³õÊ¼»¯*/
 	var counter = 0; /*¼ÆÊýÆ÷*/
 	var pageStart = 0; /*offset*/
 	var pageSize = 0; /*size*/
 	
 	/*Ê×´Î¼ÓÔØ*/
-	getData(pageStart, pageSize);
+	// getData(pageStart, pageSize);
 	
 	/*¼àÌý¼ÓÔØ¸ü¶à*/
 	$(document).on('click', '.more', function(){
 		counter ++;
 		pageStart = counter * pageSize;
 		
-		getData(pageStart, pageSize);
+		
 	});
     
 	
